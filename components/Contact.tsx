@@ -54,7 +54,7 @@ export default function Contact() {
   ]
 
   return (
-    <section id="contact" className="section bg-gradient-to-br from-gray-50 via-white to-primary-light/20 relative overflow-hidden">
+    <section id="contact" className="section bg-linear-to-br from-gray-50 via-white to-primary-light/20 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
@@ -87,7 +87,7 @@ export default function Contact() {
                   >
                     <div className="flex items-start gap-4">
                       <div 
-                        className="flex-shrink-0 w-14 h-14 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform"
+                        className="shrink-0 w-14 h-14 rounded-xl flex items-center justify-center shadow-md group-hover:scale-110 transition-transform"
                         style={{ backgroundColor: `${info.color}15` }}
                       >
                         <IconComponent size={28} color={info.color} strokeWidth={2} />
@@ -107,7 +107,7 @@ export default function Contact() {
             })}
             
             {/* Response time info */}
-            <div className="bg-gradient-to-br from-secondary-light to-secondary/10 rounded-2xl p-6 border-2 border-secondary/30 mt-6">
+            <div className="bg-linear-to-br from-secondary-light to-secondary/10 rounded-2xl p-6 border-2 border-secondary/30 mt-6">
               <div className="flex items-center gap-3 mb-3">
                 <Clock size={24} className="text-secondary" />
                 <div className="font-bold text-gray-900">Temps de réponse</div>
