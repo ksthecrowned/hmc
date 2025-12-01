@@ -46,7 +46,7 @@ export default function DonationSection() {
   }
 
   return (
-    <section id="dons" className="section bg-gradient-to-br from-white via-secondary-light/20 to-primary-light/30 relative overflow-hidden">
+    <section id="dons" className="section bg-linear-to-br from-white via-secondary-light/20 to-primary-light/30 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
@@ -101,7 +101,7 @@ export default function DonationSection() {
               <div className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100">
                 <form onSubmit={handleDonation} className="space-y-6">
                   <div>
-                    <label className="block mb-3 font-semibold text-gray-900 flex items-center gap-2">
+                    <label className="block mb-3 font-semibold text-gray-900 items-center gap-2">
                       <Heart size={18} className="text-secondary" />
                       Montant du don (FCFA) *
                     </label>
@@ -201,7 +201,7 @@ export default function DonationSection() {
                   </div>
 
                   {paymentMethod === 'momo' && (
-                    <div className="p-6 bg-gradient-to-br from-secondary-light to-secondary/10 rounded-xl border-2 border-secondary/30 animate-fade-in">
+                    <div className="p-6 bg-linear-to-br from-secondary-light to-secondary/10 rounded-xl border-2 border-secondary/30 animate-fade-in">
                       <div className="flex items-center gap-2 mb-4">
                         <Smartphone size={20} className="text-secondary" />
                         <label className="font-semibold text-gray-900">
@@ -230,7 +230,7 @@ export default function DonationSection() {
                   )}
 
                   {paymentMethod === 'card' && (
-                    <div className="p-6 bg-gradient-to-br from-primary-light to-primary/10 rounded-xl border-2 border-primary/30 animate-fade-in">
+                    <div className="p-6 bg-linear-to-br from-primary-light to-primary/10 rounded-xl border-2 border-primary/30 animate-fade-in">
                       <div className="flex items-center gap-2 mb-5">
                         <CreditCard size={20} className="text-primary" />
                         <label className="font-semibold text-gray-900">
